@@ -1,58 +1,134 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Image Trail Effects | Demo 1 | Codrops</title>
-		<meta name="description" content="A set of fun effects for mouse-following image trails." />
-		<meta name="keywords" content="image trail, effect, web design, mouse, javascript, gsap" />
-		<meta name="author" content="Codrops" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>kara no kyoukai x image-trail-effects</title>
+    <meta name="description" content="gallery using anime.js. code fork from Codrops" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+		<link rel="icon" href="favicon.ico">
 		<link rel="shortcut icon" href="favicon.ico">
-		<link rel="stylesheet" href="https://use.typekit.net/lpe8txe.css">
-		<link rel="stylesheet" type="text/css" href="css/base.css" />
-		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script></head>
-	<body class="demo-1 loading">
-		<main>
-			<div class="message">Hover effect &mdash; please view on desktop.</div>
-			<div class="frame">
-				<div class="frame__title-wrap">
-					<h1 class="frame__title">Image Trail Effects</h1>
-					<div class="frame__links">
-						<a href="https://tympanus.net/Development/SmoothScrollingImageEffects/">Previous demo</a>
-						<a href="https://tympanus.net/codrops/?p=42696">Article</a>
-					</div>
-					<div class="frame__demos">
-						<a href="index.html" class="frame__demo frame__demo--current">1</a>
-						<a href="index2.html" class="frame__demo">2</a>
-						<a href="index3.html" class="frame__demo">3</a>
-						<a href="index4.html" class="frame__demo">4</a>
-						<a href="index5.html" class="frame__demo">5</a>
-						<a href="index6.html" class="frame__demo">6</a>
-					</div>
-				</div>
-				<a class="frame__github" href="https://github.com/codrops/ImageTrailEffects/">Github</a>
-				<h2 class="frame__pagetitle">Camille Moulin <span>Personality Stylist</span></h2>
-			</div>
-			<div class="content">
-				<img class="content__img" src="img/1.jpg" alt="Some image" />
-				<img class="content__img" src="img/2.jpg" alt="Some image" />
-				<img class="content__img" src="img/3.jpg" alt="Some image" />
-				<img class="content__img" src="img/4.jpg" alt="Some image" />
-				<img class="content__img" src="img/5.jpg" alt="Some image" />
-				<img class="content__img" src="img/6.jpg" alt="Some image" />
-				<img class="content__img" src="img/7.jpg" alt="Some image" />
-				<img class="content__img" src="img/8.jpg" alt="Some image" />
-				<img class="content__img" src="img/9.jpg" alt="Some image" />
-				<img class="content__img" src="img/10.jpg" alt="Some image" />
-				<img class="content__img" src="img/11.jpg" alt="Some image" />
-				<img class="content__img" src="img/12.jpg" alt="Some image" />
-				<img class="content__img" src="img/13.jpg" alt="Some image" />
-				<img class="content__img" src="img/14.jpg" alt="Some image" />
-				<img class="content__img" src="img/15.jpg" alt="Some image" />
-				<h3 class="content__title">llssmmhh</h3>
-			</div><!--/content-->
-		</main>
-		<script src="js/imagesloaded.pkgd.min.js"></script>
-		<script src="js/TweenMax.min.js"></script>
-		<script src="js/demo.js"></script></body>
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/extra.css">
+    <script>
+    document.documentElement.className = "js";
+    var supportsCssVars = function() {
+      var e,
+        t = document.createElement("style");
+      return (
+        (t.innerHTML = "root: { --tmp-var: bold; }"),
+        document.head.appendChild(t),
+        (e = !!(
+          window.CSS &&
+          window.CSS.supports &&
+          window.CSS.supports("font-weight", "var(--tmp-var)")
+        )),
+        t.parentNode.removeChild(t),
+        e
+      );
+    };
+    supportsCssVars() ||
+      alert(
+        "Please view this demo in a modern browser that supports CSS Variables."
+      );
+    </script>
+  </head>
+
+<body class="demo-6 loading">
+  <main>
+    <div class="message">hover effect &mdash; please view on desktop.</div>
+    <div class="frame">
+      <div class="frame__title-wrap">
+        <h1 class="frame__title">Fukan Fuukei</h1>
+        <div class="frame__demos">
+          <a href="index.html"  class="frame__demo frame__demo--current">1</a>
+          <a href="index-2.html" class="frame__demo">2</a>
+          <a href="index-3.html" class="frame__demo">3</a>
+          <a href="index-4.html" class="frame__demo">4</a>
+          <a href="index-5.html" class="frame__demo">5</a>
+          <a href="index-6.html" class="frame__demo">6</a>
+          <a href="index-7.html" class="frame__demo">7</a>
+          <a href="index-8.html" class="frame__demo">8</a>
+        </div>
+      </div>
+      <a class="frame__github" href="https://github.com/codrops/ImageTrailEffects/">thanks</a>
+      <h2 class="frame__pagetitle"><span></span></h2>
+    </div>
+    <div class="content">
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_01.webp);"></div>
+        <h3 class="content__title"></h3>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_02.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_03.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_04.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_05.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_06.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_07.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_08.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_09.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_10.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_11.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_12.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_13.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_14.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_15.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_16.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_17.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_18.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_19.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_20.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_21.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_22.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_23.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_24.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_25.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_26.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_27.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_28.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_29.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_30.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_31.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_32.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_33.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_34.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_35.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_36.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_37.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_38.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_39.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_40.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_41.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_42.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_43.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_44.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_45.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_46.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_47.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_48.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_49.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_50.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_51.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_52.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_53.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_54.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_55.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_56.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_57.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_58.webp);"></div>
+      <div class="content__img content__img--full" style="background-image:url(img/fukan-fuukei_59.webp);"></div>
+    </div>
+    <!--/content-->
+  </main>
+</body>
+<!-- partial -->
+<footer>
+  <script src='./js/imagesloaded.pkgd.min.js'></script>
+  <script src='./js/TweenMax.js'></script>
+  <script  src="./js/script.js"></script>
+</footer>
 </html>
