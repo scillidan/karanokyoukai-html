@@ -1,2 +1,0 @@
-# karanokyoukai-html
-
